@@ -1,5 +1,6 @@
 using Limekuma.Prober.DivingFish.Enums;
 using Limekuma.Utils;
+using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
