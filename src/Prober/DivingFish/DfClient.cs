@@ -14,7 +14,9 @@ public abstract class DfClient
     {
         _httpClient = new()
         {
-            BaseAddress = new("https://www.diving-fish.com/")
+            BaseAddress = new("https://www.diving-fish.com/"),
+            DefaultRequestVersion =  HttpVersion.Version11,
+            DefaultVersionPolicy = HttpVersionPolicy.RequestVersionOrHigher
         };
 
         _jsonOptions = new()
